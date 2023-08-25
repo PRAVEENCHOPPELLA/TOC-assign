@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Trivago Clone</title>
+  <style>
+  /* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Search section styles */
+  .search-section {
+    padding: 20px;
+  }
+  
+  .search-section h2 {
+    margin-top: 0;
+  }
+  
+  .search-section form input {
+    margin: 5px;
+    padding: 5px;
+  }
+  
+  .search-section form input[type="submit"] {
+    background-color: #706c6c;
+    color: #161616;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  /* Results section styles */
+  .results-section {
+    padding: 20px;
+  }
+  
+  .results-section h2 {
+    margin-top: 0;
+  }
+  
+  .hotel-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .hotel-card img {
+    width: 50%;
+  }
+  
+  .hotel-card h3 {
+    margin: 5px 0;
+  }
+  
+  .hotel-card p {
+    margin: 5px 0;
+  }
+  
+  .hotel-card button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  div.scroll-container { 
+    background-color: #f0ebeb; 
+    overflow: auto; 
+    white-space: nowrap; 
+    padding: 30px; 
+    
+    }
+    div.scroll-container img { 
+      padding: 39px; 
+    }</style> 
+  <link rel="stylesheet" type="text/css" href="styleee.css">
+</head>
+<body>
+  <header>
+    <h1>Trivago Clone</h1>
+    <!-- Navigation menu -->
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Search</a></li>
+        <li><a href="login.html">login</a></li>
+        <li><a href="register.html">Sign Up</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hotel search form -->
+    <section class="search-section">
+      <h2>Find Your Perfect Hotel</h2>
+      <form>
+        <input type="text" placeholder="Destination" name="destination">
+        <input type="date" name="check-in">
+        <input type="date" name="check-out">
+        <input type="submit" value="Search">
+      </form>
+    </section>
+
+    <!-- Hotel search results -->
+    <section class="results-section">
+      <h2>Search Results</h2>
+      <div class="hotel-card">
+        <div class="scroll-container">
+        <img src="https://res.cloudinary.com/dh6rawozq/image/upload/v1692972086/images_67_pgfxvf.jpg" alt="Hotel Image">
+        <img src="https://res.cloudinary.com/dh6rawozq/image/upload/v1692972216/images_68_tvufg6.jpg" alt="Hotel Image">
+        </div>
+        <h3>TAJ KRISHNA</h3>
+        <p>JUBLIEE HILLS</p>
+        <p>3999/-</p>
+        <button>Book Now</button>
+      </div>
+      <!-- More hotel cards -->
+    </section>
+  </main>
+
+  <footer>
+    <p style="background-color: aquamarine;text-align: center;">&copy; 2023 Trivago Clone. All rights reserved.</p>
+  </footer>
+</body>
+</html>
